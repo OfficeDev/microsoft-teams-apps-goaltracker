@@ -1,0 +1,627 @@
+﻿/*
+    <copyright file="style.css" company="Microsoft">
+    Copyright (c) Microsoft. All rights reserved.
+    </copyright>
+*/
+
+.container-div {
+    height: 96vh;
+    padding-left: 3.5rem;
+    padding-right: 2.5rem;
+    width: 100vw;
+    position: fixed;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.container-subdiv-main {
+    height: 70vh;
+    width: auto;
+}
+
+.edit-goal-details-container {
+    height: 80vh;
+    padding-left: 3.5rem;
+    padding-right: 2.5rem;
+    width: 100vw;
+    position: fixed;
+    overflow-y: auto;
+    font-family: "Segoe UI";
+}
+
+.container-tab {
+    height: 96vh;
+    width: 100vw;
+    position: fixed;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.default-container .goal-cycle-text {
+    font-size: 14px;
+    color: #252423;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.default-container .edit-goal-title {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    color: #484644;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+
+.default-container .note-text {
+    font-family: "Segoe UI";
+    font-size: 14px;
+    color: #252423;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.default-container .note-header {
+    font-size: 14px;
+    color: #252424;
+    letter-spacing: 0;
+}
+
+.default-container .accordian-container {
+    background-color: white;
+}
+
+.accordian {
+    padding: 1rem;
+}
+
+.goal-heading {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-weight: bolder;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+}
+
+.aligned-unaligned-text {
+    padding-bottom: 0.4rem;
+}
+
+.note-gap-text {
+    visibility: hidden;
+}
+
+.goal-header-for-small-device {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    color: #252423;
+    letter-spacing: 0;
+    line-height: 26px;
+    background-color: #F3F2F1;
+}
+
+.delete-icon-for-small-device {
+    padding-top: 1rem;
+}
+
+.dialog-container-goal-list {
+    width: 60% !important;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: -0.01rem !important;
+}
+
+@media only screen and (max-width: 750px) {
+    .dialog-container-goal-list {
+        width: 90% !important;
+        height: 15rem !important;
+        padding-top: 2rem !important;
+        align-self: center !important;
+    }
+}
+
+.dark-container .list-item {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    background-color: #323131;
+}
+
+.high-contrast-container .list-item {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    background-color: #000;
+}
+
+.default-container .list-item {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    background-color: #fff;
+}
+
+.goal-delete-confirmation-dialog {
+    width: 40rem !important;
+    padding: 3rem !important;
+    margin-left: -0.01rem !important;
+}
+
+@media only screen and (max-width: 750px) {
+    .goal-delete-confirmation-dialog {
+        width: 80% !important;
+        height: 18rem !important;
+        padding: 3rem !important;
+        align-self: center !important;
+    }
+}
+
+.delete-button-list {
+    margin-right: -1rem;
+}
+
+.default-container .table-cell-content {
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.default-container .table-cell-content-for-small-device {
+    border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    max-width: 20% !important;
+    width: 20% !important;
+}
+
+.goal-table-note {
+    max-width: 20% !important;
+}
+
+.goal-table-align-with {
+    max-width: 40% !important;
+}
+
+.goal-table-goal-name {
+    max-width: 40% !important;
+}
+
+.default-container .table-header {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    color: #484644;
+    letter-spacing: 0;
+    line-height: 16px;
+    background-color: #F9F8F7;
+}
+
+.default-container .table-row {
+    font-family: "Segoe UI";
+    font-size: 14px !important;
+    color: #484644;
+    letter-spacing: 0;
+    line-height: 16px;
+    background-color: #F9F8F7;
+}
+
+goal-table-goal-name-cell {
+    max-width: 40% !important;
+}
+
+.goal-table-align-cell {
+    max-width: 40% !important;
+}
+
+.goal-table-note-cell {
+    max-width: 20% !important;
+}
+
+.default-container .goal-table-delete {
+    max-width: 5% !important;
+    background-color: #F9F8F7;
+}
+
+.dark-container .goal-table-delete {
+    max-width: 5% !important;
+}
+
+.default-container .goal-header {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    color: #252423;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.default-container .goal-cycle {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    color: #484644;
+    letter-spacing: 0;
+    line-height: 24px;
+    padding: 2rem 0rem 1.5rem 2rem;
+}
+
+.goal-list-for-small-device {
+    width: 70%;
+    max-width: 70% !important;
+}
+
+.goal-list-divider-for-small-device {
+    width: 83.5%;
+    max-width: 83.5% !important;
+}
+
+.default-container .table-cell-content {
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    background-color: #F9F8F7;
+}
+
+.truncate-source-name {
+    width: 25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add-goal {
+    padding-top: 0.3rem;
+}
+
+.add-goal-button {
+    min-width: 9rem !important;
+    margin-right: 0rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.add-goal-button-for-small-device {
+    min-width: 9rem !important;
+    padding-top:2rem;
+    margin-top:0.5rem;
+    margin-left:23.5rem;
+}
+
+.add-goal-list {
+    min-width: 60rem !important;
+}
+
+.add-goals-input-main {
+    width: 43rem !important;
+    padding-right: 1rem;
+}
+
+.add-goals-input-main-for-small-device {
+    width: 33.5rem !important;
+    padding-right: 1rem;
+}
+
+.remove-goal-button {
+    min-width: 2.6rem !important;
+    padding-left: 0.7rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    border-left: 1px solid #ccc;
+    height: 20px;
+}
+
+.add-goals-input {
+    width: 52.8rem !important;
+    padding-right: 1rem;
+}
+
+.goal-name-input {
+    width: 55rem !important;
+    padding-right: 1rem;
+}
+
+.error {
+    padding-left: 1.4rem;
+}
+
+.save-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    padding-right: 4rem;
+    padding-bottom: 3.3rem;
+}
+
+.goal-list {
+    width: auto;
+    margin-left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 11.5rem;
+}
+
+.radio-group-spacing {
+    padding-top: 1rem;
+}
+
+.radio-group-spacing-for-small-device {
+    padding-top: 0rem;
+    padding-right:10rem;
+}
+
+.ui-radiogroup__item {
+    padding-right: 5rem !important;
+}
+
+.goal-list ul li {
+    padding-left: 0;
+    width: 55.5rem;
+    min-height: 3.8rem !important;
+}
+
+.goal-list-for-small-device {
+    width: 34rem;
+    margin-left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 11.5rem;
+}
+
+    .goal-list-for-small-device ul li {
+        padding-left: 0;
+        width: 35rem;
+        min-height: 3.8rem !important;
+    }
+
+.icons {
+    min-width: 3rem !important;
+}
+
+.default-container .note-table-header {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    color: #979593;
+    letter-spacing: 0;
+    line-height: 16px;
+    word-wrap: break-word;
+}
+
+.dark-container .note-table-header {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    word-wrap: break-word;
+}
+
+.control-spacing {
+    padding-top: 2rem;
+}
+
+.control-padding {
+    padding-top: 0.5rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding-bottom: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+    align-content: flex-end;
+}
+
+.table-row {
+    height: 100%;
+    position: relative;
+    align-items: self-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    max-height: 70vh;
+}
+
+.align-goal-cycle-heading {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+}
+
+.align-goal-team-dropdown-title {
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.align-goal-personal-dropdown-title {
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.aligned-goal-table {
+    min-height: 20vh;
+    max-height: 26.5vh;
+    overflow-y: auto;
+}
+
+.aligned-goal-table-for-small-device {
+    min-height: 20vh;
+    max-height: 45vh;
+    overflow-y: auto;
+}
+
+.align-goal-close-button-margin {
+    margin-right: 1rem
+}
+
+.add-to-align-button-middle {
+    position: fixed;
+    top: 18.7rem;
+    right: 0;
+    width: auto;
+    padding-top: 1.5rem;
+    padding-right: 2.5rem;
+}
+
+.align-goals-button-bottom {
+    position: fixed;
+    bottom: 0rem;
+    right: 0;
+    width: auto;
+    padding-right: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.align-goal-back-button-bottom {
+    position: fixed;
+    bottom: 0rem;
+    right: 0;
+    width: auto;
+    padding-right: 13.5rem;
+    padding-bottom: 3rem;
+}
+
+.align-goal-table-bottom-content {
+    padding-top: 6.5rem;
+}
+
+.align-goal-table-bottom-content-header {
+    padding-top: 2rem;
+}
+
+.default-container .align-goal-bottom-content-no-goals {
+    padding-top: 10rem;
+    padding-left: 22rem;
+    color: lightgray;
+}
+
+.default-container .align-goal-bottom-content-no-goals-for-small-device {
+    padding-top: 13rem;
+    padding-left: 10rem;
+    color: lightgray;
+}
+
+.align-goal-success-message {
+    top: 8rem;
+    width: auto;
+    padding-top: 20rem;
+    padding-left: 1rem;
+}
+
+.align-goal-table-overflow-text-left-side {
+    max-width: 25rem;
+    width: 25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.align-goal-table-overflow-text-right-side {
+    max-width: 24rem;
+    width: 24rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.align-goal-overflow-personalgoal-for-small-device {
+    max-width: 28rem;
+    width: 28rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.align-goal-overflow-teamgoal-for-small-device {
+    max-width: 28rem;
+    width: 28rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+}
+
+.error-in-align-goal {
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    width: auto;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+}
+
+.error-in-align-goal-for-small-device {
+    position: fixed;
+    top: 21.5rem;
+    right: 0;
+    width: auto;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+}
+
+.padding-small {
+    padding-top: 2rem !important;
+}
+
+.padding-small-for-small-device {
+    padding-top: 1rem !important;
+    margin-top:0rem;
+}
+
+.width-small {
+    width: 20rem !important;
+}
+
+.date-picker-style {
+    margin-right: 2rem;
+    max-width: 30rem !important;
+}
+
+.date-picker-style-for-small-device {
+    margin-top:0rem;
+    padding-top:0rem;
+    margin-right: 2rem;
+    width: 32.5rem !important;
+    max-width: 32.5rem !important;
+}
+
+.not-authorized-error {
+    white-space: nowrap;
+    padding-left: 3.2rem;
+    padding-top: 3rem;
+}
+
+.dark-container .root-55 {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 500 !important;
+}
+
+.default-container .fieldGroup-48 {
+    background-color: rgb(243, 242, 241) !important;
+    border: none !important;
+}
+
+.dark-container .fieldGroup-60 {
+    border: none !important;
+}
+
+.default-container .root-55, .dark-container .root-66 {
+    font-weight: 300 !important;
+}
+
+/* asterisk- for goal start date and end date */
+.root-55::before, .root-66::before {
+    content: " *";
+    padding-right: 0.2rem;
+}
+
+.root-55::after, .root-66::after {
+    content: none !important;
+}
+
+.close-container {
+    right: 3.5rem !important;
+}

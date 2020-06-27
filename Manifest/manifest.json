@@ -1,0 +1,120 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "1f3b5292-45f0-4156-8f62-37a957c07b3c",
+  "packageName": "com.microsoft.teams.goaltracker",
+  "developer": {
+    "name": "<<company name>>",
+    "websiteUrl": "<<website url>>",
+    "privacyUrl": "<<privacy url>>",
+    "termsOfUseUrl": "<<terms of use url>>"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Goal Tracker",
+    "full": "Goal Tracker"
+  },
+  "description": {
+    "short": "Goal Tracker app lets you setup team and individual goals in Microsoft Teams.",
+    "full": "Goal Tracker is an comprehensive solution that lets you setup your team and individual goals from right inside Microsoft Teams, update and share the progress of goals, and integrate seamlessly with existing channels and teams."
+  },
+  "accentColor": "#E28900",
+  "staticTabs": [
+    {
+      "entityId": "managePersonalGoals",
+      "name": "Goals",
+      "contentUrl": "https://<appDomain>/manage-goals",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "<<botId>>",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Set goals",
+              "description": "Set your personal goals"
+            },
+            {
+              "title": "Edit goals",
+              "description": "Edit your personal goals"
+            },
+            {
+              "title": "Add note",
+              "description": "Add notes to your goals"
+            }
+          ]
+        },
+        {
+          "scopes": [
+            "team"
+          ],
+          "commands": [
+            {
+              "title": "Set team goals",
+              "description": "Set goals for the team"
+            },
+            {
+              "title": "Edit team goals",
+              "description": "Edit goals for the team"
+            },
+            {
+              "title": "Goal status",
+              "description": "Track the status of your team's goals"
+            }
+          ]
+        }
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "composeExtensions": [
+    {
+      "botId": "<<botId>>",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "Add note",
+          "type": "action",
+          "title": "Add note to goal",
+          "description": "Add notes to your goals",
+          "initialRun": false,
+          "fetchTask": true,
+          "context": [
+            "message"
+          ],
+          "parameters": [
+            {
+              "name": "addNote",
+              "title": "Add note to goal",
+              "description": "Add notes to your goals"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "validDomains": [
+    "<<appDomain>>"
+  ],
+  "webApplicationInfo": {
+    "id": "<<Azure AD client id>>",
+    "resource": "<<ApplicationIdURI>>"
+  }
+}
