@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddNoteButtonText" xml:space="preserve">
+    <value>Add note</value>
+    <comment>Add Note button text to show in adaptive card.</comment>
+  </data>
+  <data name="AddNotesBulletPoint" xml:space="preserve">
+    <value>* **To add note in a goal :** Go to your personal goals tab.</value>
+    <comment>Add notes bullet point in teams welcome card.</comment>
+  </data>
+  <data name="AddNoteEmptyNoteError" xml:space="preserve">
+    <value>Field cannot be empty</value>
+    <comment>Error message to be shown for mandatory note field in add note task module.</comment>
+  </data>
+  <data name="AddNoteTitleText" xml:space="preserve">
+    <value>Add a note against a goal about your progress.</value>
+    <comment>Add Note title text to show in add note command card.</comment>
+  </data>
+  <data name="AlignGoalsBulletPoint" xml:space="preserve">
+    <value>* Align personal goal with team's goal.</value>
+    <comment>Align goals bullet point in personal chat welcome card.</comment>
+  </data>
+  <data name="AlignTeamGoalsBulletPoint" xml:space="preserve">
+    <value>Chat 1:1 with Goal Tracker app and navigate to the "Goals" tab to add personal goals, align with team goals, and add notes.</value>
+    <comment>Align team goals bullet point in teams welcome card.</comment>
+  </data>
+  <data name="ContentText" xml:space="preserve">
+    <value>Let's get started!</value>
+    <comment>Content text in welcome card.</comment>
+  </data>
+  <data name="GoalBucketText" xml:space="preserve">
+    <value>Goal</value>
+    <comment>Goal bucket text label to be shown in add note task module.</comment>
+  </data>
+  <data name="AddNoteEmptyGoalError" xml:space="preserve">
+    <value>Field cannot be empty</value>
+    <comment>Error message to be shown for mandatory goal field in add note task module.</comment>
+  </data>
+  <data name="NoteText" xml:space="preserve">
+    <value>Note</value>
+    <comment>Note title text to show in add note task module.</comment>
+  </data>
+  <data name="SaveNotesBulletPoint" xml:space="preserve">
+    <value>**Add note** - Lets you write a note or paste one from colleague or customer about your progress</value>
+    <comment>Save notes bullet point in personal chat welcome card.</comment>
+  </data>
+  <data name="SetGoalsActionText" xml:space="preserve">
+    <value>Set goals</value>
+    <comment>Set goals action text in welcome card.</comment>
+  </data>
+  <data name="SetGoalsBulletPoint" xml:space="preserve">
+    <value>**Set goals** - Lets you add or edit personal goals</value>
+    <comment>Set goals bullet point in personal chat welcome card.</comment>
+  </data>
+  <data name="SetTeamGoalsActionText" xml:space="preserve">
+    <value>Set goal</value>
+    <comment>Set team goals button text.</comment>
+  </data>
+  <data name="SetTeamGoalsBulletPoint" xml:space="preserve">
+    <value>* **For team owners:**</value>
+    <comment>Set goals bullet point in Teams welcome card.</comment>
+  </data>
+  <data name="SourceText" xml:space="preserve">
+    <value>Source</value>
+    <comment>Source label to show in add note task module.</comment>
+  </data>
+  <data name="SubmitActionText" xml:space="preserve">
+    <value>Submit</value>
+    <comment>Submit action text in add note task module.</comment>
+  </data>
+  <data name="TeamGoalsBulletPoint" xml:space="preserve">
+    <value>* Type "@Goal Tracker team goals" in a post in this channel to set team goals, or click the button below to get started.</value>
+    <comment>Team goals bullet point description in Teams welcome card.</comment>
+  </data>
+  <data name="TeamsWelcomeCardContent" xml:space="preserve">
+    <value>I'm Goal Tracker, and I'm here to help this team set and track personal and team goals. </value>
+    <comment>welcome card content to show in teams</comment>
+  </data>
+  <data name="TeamsWelcomeSubHeaderText" xml:space="preserve">
+    <value>What team members can do:</value>
+    <comment>Teams welcome sub header text</comment>
+  </data>
+  <data name="WelcomeCardContent" xml:space="preserve">
+    <value>I'm Goal Tracker, and I'm here to help you set and track goals.</value>
+    <comment>Personal chat welcome card content. </comment>
+  </data>
+  <data name="WelcomeCardTitle" xml:space="preserve">
+    <value>Welcome!</value>
+    <comment>Personal chat welcome card title.</comment>
+  </data>
+  <data name="WelcomeSubHeaderText" xml:space="preserve">
+    <value>Here are the commands I follow and what they do:</value>
+    <comment>Welcome card sub header text.</comment>
+  </data>
+  <data name="GenericErrorMessage" xml:space="preserve">
+    <value>Something went wrong and I can’t do that right now. Try again in a few minutes.</value>
+    <comment>Generic error message to show to user.</comment>
+  </data>
+  <data name="InformationAboutBotMessageLimitation" xml:space="preserve">
+    <value>I am currently installed in Teams scope to reply to text messages. Please message me with supported command.</value>
+    <comment>Information about bot accepts only messaging command.</comment>
+  </data>
+  <data name="PersonalGoalStatusNotStarted" xml:space="preserve">
+    <value>Not started</value>
+    <comment>Represents personal goal status as not started.</comment>
+  </data>
+  <data name="AddNotePlaceHolder" xml:space="preserve">
+    <value>Type a note or paste one from a colleague or customer about your progress.</value>
+    <comment>Placeholder text to show as in add note task module.</comment>
+  </data>
+  <data name="BotFailureTitle" xml:space="preserve">
+    <value>Bot failure</value>
+    <comment>Bot failure title on task module when bot fails.</comment>
+  </data>
+  <data name="TaskModuleInvalidCommandText" xml:space="preserve">
+    <value>Invalid command for task module fetch activity. Command is: {0}</value>
+    <comment>Invalid command text in task module fetch action.</comment>
+  </data>
+  <data name="AltTextForWelcomeCardImage" xml:space="preserve">
+    <value>Welcome icon</value>
+    <comment>Alternative text to show on welcome card when welcome card image URL is not found.</comment>
+  </data>
+  <data name="AddNoteHeading" xml:space="preserve">
+    <value>Note saved</value>
+    <comment>Heading to show in the add note submit card</comment>
+  </data>
+  <data name="AddNoteGoalNameSubheading" xml:space="preserve">
+    <value>Goal:</value>
+    <comment>Goal name label to be shown in add note submit card.</comment>
+  </data>
+  <data name="AddNoteNoteSubheading" xml:space="preserve">
+    <value>Note:</value>
+    <comment>Note title label to show in add note submit card.</comment>
+  </data>
+  <data name="AddNoteSourceSubheading" xml:space="preserve">
+    <value>Source:</value>
+    <comment>Source label to show in add note submit card.</comment>
+  </data>
+  <data name="AddNoteDateSubheading" xml:space="preserve">
+    <value>Date:</value>
+    <comment>Date label to show in add note submit card.</comment>
+  </data>
+  <data name="EditButtonText" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Text to show on the edit button</comment>
+  </data>
+  <data name="AlignGoalsButtonText" xml:space="preserve">
+    <value>Align goals</value>
+    <comment>Align goals action text to be shown on cards.</comment>
+  </data>
+  <data name="GoalCycleEndedMessage" xml:space="preserve">
+    <value>This note has been deleted. Please add new note.</value>
+    <comment>To show when user click on edit note and the goal note is inactive or deleted.</comment>
+  </data>
+  <data name="NoteIsDeletedErrorText" xml:space="preserve">
+    <value>This note has been deleted. Please try to add new note.</value>
+    <comment>Error message to show when user try to edit deleted note.</comment>
+  </data>
+  <data name="HelpCardAddNotesBulletPoint" xml:space="preserve">
+    <value>* Add note</value>
+    <comment>Add notes bullet point to show in help card.</comment>
+  </data>
+  <data name="HelpCardContent" xml:space="preserve">
+    <value>List of supported commands are:</value>
+    <comment>Help card content text.</comment>
+  </data>
+  <data name="HelpCardGoalStatusBulletPoint" xml:space="preserve">
+    <value>* Goal status</value>
+    <comment>Goal status bullet point to show in help card.</comment>
+  </data>
+  <data name="HelpCardSetGoalsBulletPoint" xml:space="preserve">
+    <value>* Set goals</value>
+    <comment>Set goals bullet point to show in help card.</comment>
+  </data>
+  <data name="HelpCardSetTeamGoalsBulletPoint" xml:space="preserve">
+    <value>* Set team goals</value>
+    <comment>Set team goals bullet point to show in help card.</comment>
+  </data>
+  <data name="SetGoalTaskModuleTitle" xml:space="preserve">
+    <value>Set goal</value>
+    <comment>Title text for set goal task module.</comment>
+  </data>
+  <data name="GoalCycleRunningText" xml:space="preserve">
+    <value>Only one goal cycle can be active at a time.</value>
+    <comment>Validation for one one goal cycle to be shown in task module</comment>
+  </data>
+  <data name="EditPersonalGoal" xml:space="preserve">
+    <value>Edit personal goals</value>
+  </data>
+  <data name="AlignGoalTaskModuleTitle" xml:space="preserve">
+    <value>Align goal</value>
+    <comment>Title text for align goal task module.</comment>
+  </data>
+  <data name="ConfirmChangeAlignment" xml:space="preserve">
+    <value>All goals aligned in other team will be removed. Do you want to continue?</value>
+    <comment>Confirmation message for changing alignment of personal goals from one team to another.</comment>
+  </data>
+  <data name="ChangeAlignmentNoActionText" xml:space="preserve">
+    <value>No</value>
+    <comment>Button text for changing alignment of personal goals from one team to another.</comment>
+  </data>
+  <data name="ChangeAlignmentYesActionText" xml:space="preserve">
+    <value>Yes</value>
+    <comment>Button text for changing alignment of personal goals from one team to another.</comment>
+  </data>
+  <data name="AlignGoalNoPersonalGoalsAdded" xml:space="preserve">
+    <value>{0}, you have not added any personal goals. Please add some to align your personal goals with team goals.</value>
+    <comment>Error message when user has not added any personal goal.</comment>
+  </data>
+  <data name="GoalStatusNoGoalsAligned" xml:space="preserve">
+    <value>The team goals have not been aligned by any team member.</value>
+    <comment>Error message to show when user sends a command to see goal status and nobody has aligned any goal.</comment>
+  </data>
+  <data name="GoalStatusAlignedText" xml:space="preserve">
+    <value>{0} aligned</value>
+    <comment>Text to show in front of each team goal in goal status card.</comment>
+  </data>
+  <data name="GoalStatusCardTitle" xml:space="preserve">
+    <value>Progress summary</value>
+    <comment>Title text for goal status card.</comment>
+  </data>
+  <data name="GoalStatusChevronDownImageAltText" xml:space="preserve">
+    <value>collapse</value>
+    <comment>Alternative text for chevron down image in goal status card.</comment>
+  </data>
+  <data name="GoalStatusChevronUpImageAltText" xml:space="preserve">
+    <value>expand</value>
+    <comment>Alternative text for chevron up image in goal status card.</comment>
+  </data>
+  <data name="GoalStatusCompletedHeader" xml:space="preserve">
+    <value>Completed</value>
+    <comment>Text to show as header for completed count in goal status card.</comment>
+  </data>
+  <data name="GoalStatusDefaultTeamGoalEndDate" xml:space="preserve">
+    <value>99/99</value>
+    <comment>Default team goal end time in goal status card.</comment>
+  </data>
+  <data name="GoalStatusDefaultTeamGoalStartDate" xml:space="preserve">
+    <value>00/00</value>
+    <comment>Default team goal start time in goal status card.</comment>
+  </data>
+  <data name="GoalStatusDeletedText" xml:space="preserve">
+    <value>[Deleted]</value>
+    <comment>Text to show if team goal name is empty in goal status card.</comment>
+  </data>
+  <data name="GoalStatusGoalCycleText" xml:space="preserve">
+    <value>Goal cycle</value>
+    <comment>Text for goal cycle in goal status card.</comment>
+  </data>
+  <data name="GoalStatusInProgressHeader" xml:space="preserve">
+    <value>In progress</value>
+    <comment>Text to show as header for in progress count in goal status card.</comment>
+  </data>
+  <data name="GoalStatusNotStartedHeader" xml:space="preserve">
+    <value>Not started</value>
+    <comment>Text to show as header for not started count in goal status card.</comment>
+  </data>
+  <data name="GoalStatusTotalHeader" xml:space="preserve">
+    <value>Total</value>
+    <comment>Text to show as header for total count in goal status card.</comment>
+  </data>
+  <data name="SetGoalsCardTitleTextTeam" xml:space="preserve">
+    <value>Now, its time to set your team's goal! I am here to help you and your team to set team's goal.</value>
+    <comment>Text to show on set team goal button card.</comment>
+  </data>
+  <data name="TeamGoalCardCycleTextForTeam" xml:space="preserve">
+    <value>Goal cycle:  {0} - {1}.</value>
+    <comment>Text to show on the list card for team goal cycle.</comment>
+  </data>
+  <data name="PersonalGoalListCardTitle" xml:space="preserve">
+    <value>&lt;b&gt;Your goals&lt;/b&gt;</value>
+    <comment>Text to show as a heading on list card for personal goals.</comment>
+  </data>
+  <data name="SetTeamGoalsCardText" xml:space="preserve">
+    <value>Set your teams's goal</value>
+    <comment>Text to show on the SetTeamGoalsButton card.</comment>
+  </data>
+  <data name="SetTeamGoalsCardTextBody" xml:space="preserve">
+    <value>Goals will be shared with your team members to help them align with their own goals.</value>
+    <comment>Text to show on the SetTeamGoalsButton card body.</comment>
+  </data>
+  <data name="GoalStatusNoTeamGoalAvailable" xml:space="preserve">
+    <value>No team goals are available yet.</value>
+    <comment>Text to show when no teams goals are set in goal status command.</comment>
+  </data>
+  <data name="SetGoalsButtonText" xml:space="preserve">
+    <value>Set goal</value>
+    <comment>Button text for set goal in personal scope.</comment>
+  </data>
+  <data name="SetTeamGoalsButtonText" xml:space="preserve">
+    <value>Set goals</value>
+    <comment>Button text for set goal in teams scope.</comment>
+  </data>
+  <data name="GoalReminderCardContentText" xml:space="preserve">
+    <value>A gentle reminder to update the status of your goals and add  notes on your progress.</value>
+    <comment>Text for sentence in goal reminder card.</comment>
+  </data>
+  <data name="GoalReminderCardTitle" xml:space="preserve">
+    <value>A gentle reminder</value>
+    <comment>Title text for goal reminder card.</comment>
+  </data>
+  <data name="ViewGoalsButtonText" xml:space="preserve">
+    <value>View goals</value>
+    <comment>Text to show in button in goal reminder card.</comment>
+  </data>
+  <data name="ErrorSavingPersonalGoalData" xml:space="preserve">
+    <value>Something went wrong and I can’t do that right now. Try again in a few minutes.</value>
+    <comment>Error message to show when failed to save the personal goal detail data.</comment>
+  </data>
+  <data name="ErrorSavingTeamGoalData" xml:space="preserve">
+    <value>Something went wrong and I can’t do that right now. Try again in a few minutes.</value>
+    <comment>Error message to show when failed to save the team goal detail data.</comment>
+  </data>
+  <data name="AlignGoalDateConflict" xml:space="preserve">
+    <value>Your personal goal start date and end date should be within team goal start date and end date to align your goals.</value>
+    <comment>Error when personal goal start date is greater team goal end date or team goal start date is greter persoanl goal end date.</comment>
+  </data>
+  <data name="AlignGoalNoTeamGoalsAdded" xml:space="preserve">
+    <value>{0}, No teams goals are available to align your goals.</value>
+    <comment>Error message when team owner has not added any team goal in which team user is trying to align his/her personal goals or team goals cycle is ended.</comment>
+  </data>
+  <data name="AlignGoalErrorDeletingData" xml:space="preserve">
+    <value>Error while deleting personal goal details from storage.</value>
+    <comment>Error message to show when failed to delete personal goal data from storage.</comment>
+  </data>
+  <data name="AddNoteTaskModuleTitle" xml:space="preserve">
+    <value>Add a note</value>
+    <comment>Title to show on the add note task module.</comment>
+  </data>
+  <data name="EditNoteTaskModuleTitle" xml:space="preserve">
+    <value>Edit note</value>
+    <comment>Title to show on the add note task module.</comment>
+  </data>
+  <data name="EditPersonalGoalTaskModuleTitle" xml:space="preserve">
+    <value>Edit your goals</value>
+    <comment>Title text for edit personal goals task module.</comment>
+  </data>
+  <data name="EditTeamGoalTaskModuleTitle" xml:space="preserve">
+    <value>Edit team goals</value>
+    <comment>Title text for edit team goals task module.</comment>
+  </data>
+  <data name="ErrorUpdatingPersonalGoalData" xml:space="preserve">
+    <value>Error in updating personal goal detail data.</value>
+    <comment>Error message to show when failed to update the personal goal detail data.</comment>
+  </data>
+  <data name="ErrorUpdatingTeamGoalData" xml:space="preserve">
+    <value>Error in Updating team goal detail data.</value>
+    <comment>Error message to show when failed to update the team goal detail data.</comment>
+  </data>
+  <data name="SetPersonalGoalTaskModuleTitle" xml:space="preserve">
+    <value>Set personal goals</value>
+    <comment>Title text for set personal goals task module.</comment>
+  </data>
+  <data name="SetTeamGoalTaskModuleTitle" xml:space="preserve">
+    <value>Set team goals</value>
+    <comment>Title text for set team goals task module.</comment>
+  </data>
+  <data name="AddNoteMaximumNoteError" xml:space="preserve">
+    <value>Maximum of 10 notes can be added.</value>
+    <comment>Error message to show if user try to add more than 10 notes in a porsonal goal.</comment>
+  </data>
+  <data name="AddNoteNotAllowedForBotMessage" xml:space="preserve">
+    <value>This command cannot be used on conversation messages sent by a bot.</value>
+    <comment>Error message when user try to invoke add note from message action for bot messages.</comment>
+  </data>
+  <data name="AddNoteEditButtonText" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Text to show on the edit button</comment>
+  </data>
+  <data name="TeamGoalCardCycleTextForTeamMembers" xml:space="preserve">
+    <value>Goal cycle: {1} - {2}. Set by {0}</value>
+    <comment>Text for goal cycle of team goal list card for team members.</comment>
+  </data>
+  <data name="TeamGoalListCardTitleForTeam" xml:space="preserve">
+    <value>&lt;b&gt;Your goals&lt;/b&gt;</value>
+    <comment>Title text of team goal list card for team.</comment>
+  </data>
+  <data name="TeamGoalListCardTitleForTeamMembers" xml:space="preserve">
+    <value>&lt;b&gt;Team goals&lt;/b&gt;</value>
+    <comment>Title text of team goal list card for team members.</comment>
+  </data>
+  <data name="InvalidTenantText" xml:space="preserve">
+    <value>Invalid tenant detected.</value>
+    <comment>Text to show if unexpected tenant id.</comment>
+  </data>
+  <data name="PersonalGoalAddNoteButtonText" xml:space="preserve">
+    <value>Add note</value>
+    <comment>Add Note button text to show in personal goal list card.</comment>
+  </data>
+  <data name="PersonalGoalCardCycleText" xml:space="preserve">
+    <value>Goal cycle:  {0} - {1}.</value>
+    <comment>Text to show on the list card for personal goal cycle.</comment>
+  </data>
+  <data name="PersonalGoalEditButtonText" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Text to show on the edit button in personal goal list card.</comment>
+  </data>
+  <data name="GoalIsDeletedErrorText" xml:space="preserve">
+    <value>The goal has been deleted.</value>
+    <comment>Error message to show when user try to edit note for deleted goal.</comment>
+  </data>
+  <data name="AddNoteNoPersonalGoalAvailable" xml:space="preserve">
+    <value>Please add personal goals to start adding note.</value>
+    <comment>Error message to show when user tries to add note without setting personal goal.</comment>
+  </data>
+  <data name="NoActiveGoalOrGoalCycleEndedError" xml:space="preserve">
+    <value>Editing of goals is possible only during an active goal cycle.</value>
+    <comment>Error message to show when there is not active personal goals or goal cycle is ended.</comment>
+  </data>
+  <data name="GoalCycleEndedErrorForAddingNote" xml:space="preserve">
+    <value>Notes can be added only during an active goal cycle.</value>
+    <comment>Error message to show when there is not active personal goals or goal cycle is ended, for adding goals.</comment>
+  </data>
+  <data name="NoActiveGoalOrGoalCycleEndedErrorForAligningGoal" xml:space="preserve">
+    <value>Either goals you are looking for have been deleted or this goal cycle is inactive. Please align your goal with active team goals.</value>
+    <comment>Error message to show when there is not active personal goals or goal cycle is ended, for aligning goals.</comment>
+  </data>
+  <data name="ShowProgressBulletPoint" xml:space="preserve">
+    <value>* Show progress of goals.</value>
+    <comment>Show progress bullet point to show in Teams welcome card</comment>
+  </data>
+  <data name="SourceNamePlaceHolder" xml:space="preserve">
+    <value>Hint: outlook or praise( you can also use message action to pick up sender’s name)</value>
+    <comment>Placeholder for Source name in add note card.</comment>
+  </data>
+  <data name="Bi-weeklyReminderTypeString" xml:space="preserve">
+    <value>[Bi-weekly reminder]</value>
+    <comment>Text that represents Bi-weekly reminder type string.</comment>
+  </data>
+  <data name="MonthlyReminderTypeString" xml:space="preserve">
+    <value>[Monthly reminder]</value>
+    <comment>Text that represents Monthly reminder type string.</comment>
+  </data>
+  <data name="PersonalGoalEndingAfterThreeDays" xml:space="preserve">
+    <value>[Your goal cycle will be ended in next 3 days]</value>
+    <comment>Text that represents reminder type string for personal goal ending after 3 days.</comment>
+  </data>
+  <data name="QuarterlyReminderTypeString" xml:space="preserve">
+    <value>[Quarterly reminder]</value>
+    <comment>Text that represents Quarterly reminder type string.</comment>
+  </data>
+  <data name="TeamGoalEndingAfterThreeDays" xml:space="preserve">
+    <value>[Team goal cycle will be ended in next 3 days]</value>
+    <comment>Text that represents reminder type string for team goal ending after 3 days.</comment>
+  </data>
+  <data name="WeeklyReminderTypeString" xml:space="preserve">
+    <value>[Weekly reminder]</value>
+    <comment>Text that represents weekly reminder type string.</comment>
+  </data>
+  <data name="SetGoalsCommandCardText" xml:space="preserve">
+    <value>Click on Set goals to add or edit personal goals</value>
+    <comment>Set goals text to show in set goals command card.</comment>
+  </data>
+  <data name="EditGoalsActionText" xml:space="preserve">
+    <value>Edit goals</value>
+    <comment>Text to show in edit buttton in personal scope.</comment>
+  </data>
+  <data name="EditGoalsCardTitleTextTeam" xml:space="preserve">
+    <value>Click on Edit goals to edit any previously set team goals.</value>
+    <comment>Text to show on edit team goals button card.</comment>
+  </data>
+  <data name="EditTeamGoalsActionText" xml:space="preserve">
+    <value>Edit goals</value>
+    <comment>Edit team goals button text.</comment>
+  </data>
+  <data name="EditGoalsCommandCardText" xml:space="preserve">
+    <value>Click on Edit goals to edit any previously set team goals.</value>
+    <comment>Edit goals text to show in edit goal command card.</comment>
+  </data>
+  <data name="NoActiveGoalOrGoalCycleEndedErrorForAlignGoal" xml:space="preserve">
+    <value>Aligning goals is possible only during an active goal cycle.</value>
+    <comment>Error message to show when there is not active personal goals or goal cycle is ended when user try to align goal.</comment>
+  </data>
+</root>

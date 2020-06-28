@@ -3,51 +3,80 @@ page_type: sample
 languages:
 - csharp
 products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+- office-teams
+description: Goal Tracker is an comprehensive solution that lets you setup your team and individual goals from right inside Microsoft Teams
+urlFragment: microsoft-teams-app-goaltracker
 ---
 
-# Official Microsoft Sample
+# Goal Tracker App Template
 
-<!-- 
-Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
+| [Documentation](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Home) | [Deployment guide](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Deployment-Guide) | [Architecture](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Solution-Overview) |
+| ---- | ---- | ---- |
 
-Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
+We all know the importance of setting goals -- they hold you accountable, tell you what you truly want and help propel you forward. Whether the goals are professional or personal, many of us simply state our goals but fail to set deadlines and track our progress toward achieving them.
 
-Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
--->
+Goal Tracker is an comprehensive solution that lets you setup your team and individual goals from right inside Microsoft Teams, update and share the progress of goals, and integrate seamlessly with existing channels and teams.
 
-Give a short description for your sample here. What does it do and why is it important?
+As a team member, this app template can be utilized to set your personal goals, update progress and importantly, save notes directly from Teams or any other application as a link so that you don't have to scramble to get the evidence of work done, praises that you got for your work or anything relevant for any review! 
+As a manager, you can set your teams goals in addition to your personal goals. Team members can align their personal goals to team goals. A simple bot command can help you to view the progress against your team goals. Team goal progress is automatically updated according to the updates on personal goals by your team members. Additionally, this Microsoft Teams app also notifies your entire team to update progress as per the frequency selected and maintains the history of your goals up to 1 year.
 
-## Contents
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
+## Key features
+With the Goal Tracker app in Microsoft Teams, all users can
+-  Setup  personal goals
+-  Save teams messages as  notes to record milestones or progress for your goals
+-  Organize and prioritize your goals in the personal board
+-  Align personal goals towards teams’ goals and collaborate with managers or coworkers in a team
+-  Get timely reminders to help you stay on track, update goals right in the Microsoft Teams interface
+- Mark progress for personal goals. Status updates on personal goals are automatically reflect in teams’ goals
+- View notes saved against a personal goal
+- Edit notes saved for a personal goal
 
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
-| `README.md`       | This README file.                          |
-| `LICENSE`         | The license for the sample.                |
+Team owners/Managers can use goal tracker app to
+- Create teams goals
+- Add or edit teams’ goals
+- View the completion status of Teams’ goals. Completion status of personal goals automatically reflects in Teams’ progress
 
-## Prerequisites
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+Here are some of the workflows in action by an end-user:
 
-## Setup
+1. To setup personal goals
+![Create personal goals](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Images/Setgoals.png)
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
+2. To manage the personal goals
+![Manage goals](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Images/Editgoals.png)
 
-## Running the sample
+3. To track progress of the goals
+![Track progress](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Images/PersonalGoalsTab.png)
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+4. Record progress or milestones right from a chat thread
+![Add notes](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Images/Fromchat.png)
 
-## Key concepts
+5. Check the status of team goals
+![Team goal status](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Images/Goalstatus.png)
 
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+
+## Legal notice
+
+This app template is provided under the [MIT License](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
+
+-	You are responsible for complying with all applicable privacy and security regulations related to use, collection and handling of any personal data by your app.  This includes complying with all internal privacy and security policies of your organization if your app is developed to be sideloaded internally within your organization.
+
+-	Where applicable, you may be responsible for data related incidents or data subject requests for data collect through your app.
+
+-	Any trademarks or registered trademarks of Microsoft in the United States and/or other countries and logos included in this repository are the property of Microsoft, and the license for this project does not grant you rights to use any Microsoft names, logos or trademarks outside of this repository.  Microsoft’s general trademark guidelines can be found [here](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general.aspx).
+
+-	Use of this template does not guarantee acceptance of your app to the Teams app store.  To make this app available in the Teams app store, you will have to comply with the [submission and validation process](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/appsource/publish), and all associated requirements such as including your own privacy statement and terms of use for your app.
+
+
+## Getting started
+
+Begin with the [Solution overview](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Solution-overview) to read about what the app does and how it works.
+
+When you're ready to try out Goal Tracker app, or to use it in your own organization, follow the steps in the [Deployment guide](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Deployment-guide).
+
+#### Known issue:
+The app is currently not supported on iOS devices. We are actively working on fixing the issue and will update the repo as soon as it is available
 
 ## Contributing
 
