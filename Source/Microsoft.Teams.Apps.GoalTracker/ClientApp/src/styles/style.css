@@ -170,8 +170,6 @@
     border-radius: 0.5rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
-    max-width: 20% !important;
-    width: 20% !important;
 }
 
 .goal-table-note {
@@ -243,13 +241,13 @@ goal-table-goal-name-cell {
 }
 
 .goal-list-for-small-device {
-    width: 70%;
-    max-width: 70% !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 .goal-list-divider-for-small-device {
-    width: 83.5%;
-    max-width: 83.5% !important;
+    width: 100%;
+    max-width: 100% !important;
 }
 
 .default-container .table-cell-content {
@@ -331,6 +329,14 @@ goal-table-goal-name-cell {
     padding-bottom: 3.3rem;
 }
 
+.save-button-for-small-device {
+    min-width: 13rem !important;
+    margin-left: 21.5rem;
+    position: fixed;
+    align-self: flex-end;
+    top: 57rem;
+}
+
 .goal-list {
     width: auto;
     margin-left: 0;
@@ -358,17 +364,17 @@ goal-table-goal-name-cell {
     min-height: 3.8rem !important;
 }
 
-.goal-list-for-small-device {
-    width: 34rem;
-    margin-left: 0;
+.set-goal-list-for-small-device {
+    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
     max-height: 11.5rem;
 }
 
-    .goal-list-for-small-device ul li {
+    .set-goal-list-for-small-device ul li {
         padding-left: 0;
-        width: 35rem;
+        overflow-x: hidden;
+        width: 100%;
         min-height: 3.8rem !important;
     }
 
