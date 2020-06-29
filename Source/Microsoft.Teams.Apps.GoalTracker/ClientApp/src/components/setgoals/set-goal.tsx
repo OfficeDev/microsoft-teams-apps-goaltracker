@@ -43,7 +43,7 @@ const SetGoal: React.FunctionComponent<ISetGoalsProps> = props => {
                 </Flex>
                 {props.screenWidth <= 599 &&
                     <div>
-                        <Flex className="goal-list-for-small-device" >
+                        <Flex className="set-goal-list-for-small-device" >
                             <List truncateHeader={true} items={props.goals} />
                         </Flex>
                         <div className="add-goal">
@@ -110,11 +110,18 @@ const SetGoal: React.FunctionComponent<ISetGoalsProps> = props => {
                         {props.errorMessage !== null && <Text className="small-margin-left" content={props.errorMessage} error />}
                     </Flex>
                 </div>
-                <div className="save-button">
-                    <Flex gap="gap.smaller">
+                {props.screenWidth <= 599 &&
+                    <div className="save-button-for-small-device">
                         <Button content={t('saveButtonText')} primary loading={props.isSaveButtonLoading} disabled={props.isSaveButtonDisabled} onClick={props.saveGoals} />
-                    </Flex>
-                </div>
+                    </div>
+                }
+                {props.screenWidth > 599 &&
+                    <div className="save-button">
+                        <Flex gap="gap.smaller">
+                            <Button content={t('saveButtonText')} primary loading={props.isSaveButtonLoading} disabled={props.isSaveButtonDisabled} onClick={props.saveGoals} />
+                        </Flex>
+                    </div>
+                }
             </div>
         </div>
     );

@@ -63,9 +63,9 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 36,
-      "defaultValue": "managePersonalGoals",
+      "defaultValue": "1f3b5292-45f0-4156-8f62-37a957c07b3c",
       "metadata": {
-        "description": "Manifest id."
+        "description": "The unique identifier which should be same id as used in Goal Tracker Teams app manifest. This is required to provide deep link to Goal tracker personal tabs."
       }
     },
     "tenantId": {
