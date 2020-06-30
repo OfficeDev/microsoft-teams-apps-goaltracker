@@ -13,40 +13,38 @@ urlFragment: microsoft-teams-app-goaltracker
 | [Documentation](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Home) | [Deployment guide](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Deployment-Guide) | [Architecture](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Solution-Overview) |
 | ---- | ---- | ---- |
 
-We all know the importance of setting goals -- they hold you accountable, tell you what you truly want and help propel you forward. Whether the goals are professional or personal, many of us simply state our goals but fail to set deadlines and track our progress toward achieving them.
+The importance of setting goals is well known to successful organizations. They hold you accountable, tell you what you truly want, and help propel you forward. Whether the goals are professional or personal, many of us simply state our goals but fail to set deadlines and track our progress toward achieving them.
 
-Goal Tracker is an comprehensive solution that lets you setup your team and individual goals from right inside Microsoft Teams, update and share the progress of goals, and integrate seamlessly with existing channels and teams.
+The Goal Tracker app is a comprehensive solution that lets you set up your team and individual goals in Microsoft Teams, update and share the progress of goals, and integrate seamlessly with existing channels and teams.
 
-As a team member, this app template can be utilized to set your personal goals, update progress and importantly, save notes directly from Teams or any other application as a link so that you don't have to scramble to get the evidence of work done, praises that you got for your work or anything relevant for any review! 
-As a manager, you can set your teams goals in addition to your personal goals. Team members can align their personal goals to team goals. A simple bot command can help you to view the progress against your team goals. Team goal progress is automatically updated according to the updates on personal goals by your team members. Additionally, this Microsoft Teams app also notifies your entire team to update progress as per the frequency selected and maintains the history of your goals up to 1 year.
+As a team member, this app template can be utilized to set your personal goals, update progress, save notes directly from Teams (or any other application as a link), praises that you got for your work, or anything else relevant for any review! 
+As a manager, you can set your team's goals in addition to your personal goals. Team members can align their personal goals to team goals. A simple bot command can help you to view the progress against your team goals. Team goal progress is automatically updated according to the updates on personal goals by your team members. Also, the app notifies your entire team to update progress as per the frequency selected, and maintains the history of your goals up to 1 year.
 
 
 ## Key features
-With the Goal Tracker app in Microsoft Teams, all users can
--  Setup  personal goals
--  Save teams messages as  notes to record milestones or progress for your goals
--  Organize and prioritize your goals in the personal board
--  Align personal goals towards teams’ goals and collaborate with managers or coworkers in a team
--  Get timely reminders to help you stay on track, update goals right in the Microsoft Teams interface
-- Mark progress for personal goals. Status updates on personal goals are automatically reflect in teams’ goals
+With the Goal Tracker app in Microsoft Teams, all users can:
+- Set up  personal goals
+- Save teams messages as notes to record milestones or progress for your goals
+- Organize and prioritize your goals in the personal board
+- Align personal goals towards teams’ goals and collaborate with managers or coworkers in a team
+- Get timely reminders to help you stay on track, update goals right in the Microsoft Teams interface
+- Mark progress for personal goals. Status updates on personal goals are automatically reflected in teams’ goals
 - View notes saved against a personal goal
 - Edit notes saved for a personal goal
 
-Team owners/Managers can use goal tracker app to
-- Create teams goals
-- Add or edit teams’ goals
-- View the completion status of Teams’ goals. Completion status of personal goals automatically reflects in Teams’ progress
-
+Team owners/Managers can use the Goal Tracker app to:
+- Create or edit team goals
+- View the completion status of Teams’ goals. Completion status of personal goals automatically reflected in Teams’ progress
 
 Here are some of the workflows in action by an end-user:
 
-1. To setup personal goals
+1. Setup personal goals
 ![Create personal goals](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Images/Setgoals.png)
 
-2. To manage the personal goals
+2. Manage personal goals
 ![Manage goals](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Images/Editgoals.png)
 
-3. To track progress of the goals
+3. Track progress of goals
 ![Track progress](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Images/PersonalGoalsTab.png)
 
 4. Record progress or milestones right from a chat thread
