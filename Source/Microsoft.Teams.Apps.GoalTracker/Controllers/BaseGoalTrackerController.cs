@@ -79,7 +79,7 @@ namespace Microsoft.Teams.Apps.GoalTracker.Controllers
         /// Get user Azure AD access token.
         /// </summary>
         /// <returns>Access token with Graph scopes.</returns>
-        public async Task<string> GetAccessTokenAsync()
+        protected async Task<string> GetAccessTokenAsync()
         {
             List<string> scopeList = this.azureAdOptions.Value.GraphScope.Split(new char[] { ' ' }, System.StringSplitOptions.RemoveEmptyEntries).ToList();
 

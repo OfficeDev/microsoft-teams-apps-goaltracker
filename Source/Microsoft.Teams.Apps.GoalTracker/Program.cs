@@ -23,7 +23,7 @@ namespace Microsoft.Teams.Apps.GoalTracker
         }
 
         /// <summary>
-        /// Build the web host for servicing HTTP requests.
+        /// Build the web host builder for servicing HTTP requests.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         /// <returns> The WebHostBuilder configured from the arguments with the composition root defined in <see cref="Startup" />.</returns>
@@ -32,9 +32,6 @@ namespace Microsoft.Teams.Apps.GoalTracker
                 .CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((hostingContext, config) =>
                 {
-                    config
-                        .AddEnvironmentVariables();
-
                     if (hostingContext.HostingEnvironment.IsDevelopment())
                     {
                         // Using dotnet secrets to store the settings during development

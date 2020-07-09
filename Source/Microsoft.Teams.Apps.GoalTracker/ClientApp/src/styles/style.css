@@ -38,30 +38,34 @@
 }
 
 .default-container .goal-cycle-text {
-    font-size: 14px;
+    color: #252423;
+}
+
+.goal-cycle-text {
+    font-size: 1.4rem;
     color: #252423;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 2.4rem;
 }
 
 .default-container .edit-goal-title {
     font-family: "Segoe UI";
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #484644;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 1.6rem;
 }
 
 .default-container .note-text {
     font-family: "Segoe UI";
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #252423;
     letter-spacing: 0;
-    line-height: 20px;
+    line-height: 2rem;
 }
 
 .default-container .note-header {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #252424;
     letter-spacing: 0;
 }
@@ -95,10 +99,10 @@
 
 .goal-header-for-small-device {
     font-family: "Segoe UI";
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #252423;
     letter-spacing: 0;
-    line-height: 26px;
+    line-height: 2.6rem;
     background-color: #F3F2F1;
 }
 
@@ -113,7 +117,7 @@
     margin-left: -0.01rem !important;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 75rem) {
     .dialog-container-goal-list {
         width: 90% !important;
         height: 15rem !important;
@@ -146,7 +150,7 @@
     margin-left: -0.01rem !important;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 75rem) {
     .goal-delete-confirmation-dialog {
         width: 80% !important;
         height: 18rem !important;
@@ -186,19 +190,19 @@
 
 .default-container .table-header {
     font-family: "Segoe UI";
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #484644;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 1.6rem;
     background-color: #F9F8F7;
 }
 
 .default-container .table-row {
     font-family: "Segoe UI";
-    font-size: 14px !important;
+    font-size: 1.4rem !important;
     color: #484644;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 1.6rem;
     background-color: #F9F8F7;
 }
 
@@ -225,18 +229,18 @@ goal-table-goal-name-cell {
 
 .default-container .goal-header {
     font-family: "Segoe UI";
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #252423;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 2.4rem;
 }
 
 .default-container .goal-cycle {
     font-family: "Segoe UI Semibold";
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #484644;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 2.4rem;
     padding: 2rem 0rem 1.5rem 2rem;
 }
 
@@ -278,9 +282,9 @@ goal-table-goal-name-cell {
 
 .add-goal-button-for-small-device {
     min-width: 9rem !important;
-    padding-top:2rem;
-    margin-top:0.5rem;
-    margin-left:23.5rem;
+    padding-top: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 23.5rem;
 }
 
 .add-goal-list {
@@ -302,8 +306,8 @@ goal-table-goal-name-cell {
     padding-left: 0.7rem;
     padding-right: 1rem;
     padding-top: 0.2rem;
-    border-left: 1px solid #ccc;
-    height: 20px;
+    border-left: 0.1rem solid #ccc;
+    height: 2rem;
 }
 
 .add-goals-input {
@@ -351,7 +355,7 @@ goal-table-goal-name-cell {
 
 .radio-group-spacing-for-small-device {
     padding-top: 0rem;
-    padding-right:10rem;
+    padding-right: 10rem;
 }
 
 .ui-radiogroup__item {
@@ -384,18 +388,18 @@ goal-table-goal-name-cell {
 
 .default-container .note-table-header {
     font-family: "Segoe UI";
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #979593;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 1.6rem;
     word-wrap: break-word;
 }
 
 .dark-container .note-table-header {
     font-family: "Segoe UI";
-    font-size: 12px;
+    font-size: 1.2rem;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 1.6rem;
     word-wrap: break-word;
 }
 
@@ -574,7 +578,7 @@ goal-table-goal-name-cell {
 
 .padding-small-for-small-device {
     padding-top: 1rem !important;
-    margin-top:0rem;
+    margin-top: 0rem;
 }
 
 .width-small {
@@ -587,8 +591,8 @@ goal-table-goal-name-cell {
 }
 
 .date-picker-style-for-small-device {
-    margin-top:0rem;
-    padding-top:0rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
     margin-right: 2rem;
     width: 32.5rem !important;
     max-width: 32.5rem !important;

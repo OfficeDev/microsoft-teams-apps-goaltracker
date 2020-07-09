@@ -467,14 +467,23 @@ namespace Microsoft.Teams.Apps.GoalTracker.Helpers
         /// <returns>Return text based on reminder frequency.</returns>
         private string GetReminderTypeString(int reminderFrequency)
         {
-            return reminderFrequency switch
+            switch (reminderFrequency)
             {
-                (int)ReminderFrequency.Weekly => this.localizer.GetString("WeeklyReminderTypeString"),
-                (int)ReminderFrequency.Biweekly => this.localizer.GetString("Bi-weeklyReminderTypeString"),
-                (int)ReminderFrequency.Monthly => this.localizer.GetString("MonthlyReminderTypeString"),
-                (int)ReminderFrequency.Quarterly => this.localizer.GetString("QuarterlyReminderTypeString"),
-                _ => string.Empty,
-            };
+                case (int)ReminderFrequency.Weekly:
+                    return this.localizer.GetString("WeeklyReminderTypeString");
+
+                case (int)ReminderFrequency.Biweekly:
+                    return this.localizer.GetString("Bi-weeklyReminderTypeString");
+
+                case (int)ReminderFrequency.Monthly:
+                    return this.localizer.GetString("MonthlyReminderTypeString");
+
+                case (int)ReminderFrequency.Quarterly:
+                    return this.localizer.GetString("QuarterlyReminderTypeString");
+
+                default:
+                    return string.Empty;
+            }
         }
     }
 }
