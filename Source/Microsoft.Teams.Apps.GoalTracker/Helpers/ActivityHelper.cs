@@ -115,30 +115,29 @@ namespace Microsoft.Teams.Apps.GoalTracker.Helpers
         /// <returns>Returns collection of team goal status containing goal status data about each aligned team goal.</returns>
         private IEnumerable<TeamGoalStatus> HandleGoalsWithMultipleTeamGoalsAligned(IEnumerable<TeamGoalStatus> teamGoalStatuses)
         {
-            if (!teamGoalStatuses.Any(teamGoalStatus => teamGoalStatus.TeamGoalId.Contains(',', StringComparison.OrdinalIgnoreCase)))
+            if (!teamGoalStatuses.Any(teamGoalStatus => teamGoalStatus.TeamGoalId.Contains(',', StringComparison.Ordinal)))
             {
                 return teamGoalStatuses;
             }
 
-            var teamGoalStatusDetails = teamGoalStatuses.Where(teamGoalStatus => !teamGoalStatus.TeamGoalId.Contains(',', StringComparison.OrdinalIgnoreCase)).ToList();
-            var multipleTeamGoalStatuses = teamGoalStatuses.Where(teamGoalStatus => teamGoalStatus.TeamGoalId.Contains(',', StringComparison.OrdinalIgnoreCase)).ToList();
-
+            var teamGoalStatusDetails = teamGoalStatuses.Where(teamGoal => !teamGoal.TeamGoalId.Contains(',', StringComparison.Ordinal)).ToList();
+            var multipleTeamGoalStatuses = teamGoalStatuses.Where(teamGoal => teamGoal.TeamGoalId.Contains(',', StringComparison.Ordinal)).ToList();
             foreach (var teamGoalStatus in multipleTeamGoalStatuses)
             {
                 var teamgoalIds = teamGoalStatus.TeamGoalId.Split(',');
                 foreach (var teamGoalId in teamgoalIds)
                 {
-                    var teamGoalStatusDetail = teamGoalStatusDetails.Where(teamGoalStatus => teamGoalStatus.TeamGoalId == teamGoalId.Trim()).FirstOrDefault();
+                    var teamGoalStatusDetail = teamGoalStatusDetails.Where(teamGoal => teamGoal.TeamGoalId == teamGoalId.Trim()).FirstOrDefault();
                     if (teamGoalStatusDetail != null)
                     {
                         // If team goal id already exists in collection, then add status counts to existing team goal id.
-                        teamGoalStatusDetails.ForEach(teamGoalStatusDetail =>
+                        teamGoalStatusDetails.ForEach(teamGoal =>
                         {
-                            if (teamGoalStatusDetail.TeamGoalId == teamGoalId)
+                            if (teamGoal.TeamGoalId == teamGoalId)
                             {
-                                teamGoalStatusDetail.NotStartedGoalCount += teamGoalStatus.NotStartedGoalCount;
-                                teamGoalStatusDetail.InProgressGoalCount += teamGoalStatus.InProgressGoalCount;
-                                teamGoalStatusDetail.CompletedGoalCount += teamGoalStatus.CompletedGoalCount;
+                                teamGoal.NotStartedGoalCount += teamGoalStatus.NotStartedGoalCount;
+                                teamGoal.InProgressGoalCount += teamGoalStatus.InProgressGoalCount;
+                                teamGoal.CompletedGoalCount += teamGoalStatus.CompletedGoalCount;
                             }
                         });
                     }

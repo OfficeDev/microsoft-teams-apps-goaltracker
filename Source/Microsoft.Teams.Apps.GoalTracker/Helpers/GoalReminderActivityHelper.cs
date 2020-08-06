@@ -281,9 +281,9 @@ namespace Microsoft.Teams.Apps.GoalTracker.Helpers
                     }
                 });
             }
-            #pragma warning disable CA1031 // Catching general exceptions to log exception details in telemetry client.
+#pragma warning disable CA1031 // Catching general exceptions to log exception details in telemetry client.
             catch (Exception ex)
-            #pragma warning restore CA1031 // Catching general exceptions to log exception details in telemetry client.
+#pragma warning restore CA1031 // Catching general exceptions to log exception details in telemetry client.
             {
                 this.logger.LogError(ex, $"Error while sending goal reminder in team from background service for : {teamGoalDetail.TeamGoalId} at {nameof(this.SendGoalReminderToTeamAndTeamMembersAsync)}");
             }
@@ -332,9 +332,9 @@ namespace Microsoft.Teams.Apps.GoalTracker.Helpers
                     }
                 });
             }
-            #pragma warning disable CA1031 // Catching general exceptions to log exception details in telemetry client.
+#pragma warning disable CA1031 // Catching general exceptions to log exception details in telemetry client.
             catch (Exception ex)
-            #pragma warning restore CA1031 // Catching general exceptions to log exception details in telemetry client.
+#pragma warning restore CA1031 // Catching general exceptions to log exception details in telemetry client.
             {
                 this.logger.LogError(ex, $"Error while updating personal goal, team goal and personal goal note detail from background service for : {teamGoalDetail.TeamGoalId} at {nameof(this.UpdateGoalDetailsAsync)}");
             }
@@ -467,14 +467,23 @@ namespace Microsoft.Teams.Apps.GoalTracker.Helpers
         /// <returns>Return text based on reminder frequency.</returns>
         private string GetReminderTypeString(int reminderFrequency)
         {
-            return reminderFrequency switch
+            switch (reminderFrequency)
             {
-                (int)ReminderFrequency.Weekly => this.localizer.GetString("WeeklyReminderTypeString"),
-                (int)ReminderFrequency.Biweekly => this.localizer.GetString("Bi-weeklyReminderTypeString"),
-                (int)ReminderFrequency.Monthly => this.localizer.GetString("MonthlyReminderTypeString"),
-                (int)ReminderFrequency.Quarterly => this.localizer.GetString("QuarterlyReminderTypeString"),
-                _ => string.Empty,
-            };
+                case (int)ReminderFrequency.Weekly:
+                    return this.localizer.GetString("WeeklyReminderTypeString");
+
+                case (int)ReminderFrequency.Biweekly:
+                    return this.localizer.GetString("Bi-weeklyReminderTypeString");
+
+                case (int)ReminderFrequency.Monthly:
+                    return this.localizer.GetString("MonthlyReminderTypeString");
+
+                case (int)ReminderFrequency.Quarterly:
+                    return this.localizer.GetString("QuarterlyReminderTypeString");
+
+                default:
+                    return string.Empty;
+            }
         }
     }
 }
