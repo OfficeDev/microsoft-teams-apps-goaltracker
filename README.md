@@ -56,6 +56,8 @@ Here are some of the workflows in action by an end-user:
 
 ## Legal notice
 
+This app template is provided under the [MIT License](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
+
 - You, not Microsoft, will license the use of your app to users or organization. 
 
 - This app template is not intended to substitute your own regulatory due diligence or make you or your app compliant with respect to any applicable regulations, including but not limited to privacy, healthcare, employment, or financial regulations.
