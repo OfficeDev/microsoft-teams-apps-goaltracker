@@ -7,7 +7,7 @@
 		"@microsoft/applicationinsights-react-js": "3.0.0",
 		"@microsoft/teams-js": "1.6.0",
 		"@uifabric/variants": "7.1.84",
-		"axios": "0.19.2",
+		"axios": "0.21.1",
 		"classnames": "2.2.6",
 		"guid-typescript": "1.0.9",
 		"i18next": "19.4.5",
